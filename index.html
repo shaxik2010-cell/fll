@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Мой сайт 🔥</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(20, 20, 20, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px red; }
+      to { text-shadow: 0 0 20px crimson; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(20, 20, 20, 0.6);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .download {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .download a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      background: rgba(255, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      border: 1px solid rgba(255, 0, 0, 0.4);
+      transition: 0.3s ease;
+    }
+
+    .download a:hover {
+      transform: scale(1.08);
+      background: rgba(255, 0, 0, 0.35);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+
+    .chat {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      background: rgba(20, 20, 20, 0.6);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 0, 0, 0.3);
+    }
+
+    /* Анимация фона */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* 📱 Адаптив */
+    @media (max-width: 600px) {
+      header { font-size: 20px; }
+      h2 { font-size: 22px; }
+      .download a { font-size: 14px; padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>🔥 Мой сайт 🔥</header>
+
+  <div class="container">
+    <h2>📂 Скачать файлы</h2>
+    <div class="download">
+      <a href="files/file1.zip" download>Скачать файл 1</a>
+      <a href="files/file2.zip" download>Скачать файл 2</a>
+    </div>
+
+    <h2>💬 Чат</h2>
+    <div class="chat">
+      <!-- ✅ Твой чат Shaxik -->
+      <script id="cid0020000417921911270" data-cfasync="false" async 
+        src="//st.chatango.com/js/gz/emb.js" 
+        style="width: 100%; height: 400px;">
+        {"handle":"shaxik","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"fwtickm":1}}
+      </script>
+    </div>
+  </div>
+
+  <footer>© 2025 🔥 Все права защищены</footer>
+
+  <!-- Подключение анимированного фона -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 50 },
+        "size": { "value": 2 },
+        "move": { "speed": 1.5 },
+        "line_linked": { "enable": true, "color": "#ff0000" },
+        "color": { "value": "#ff0000" }
+      }
+    });
+  </script>
+</body>
+</html>
